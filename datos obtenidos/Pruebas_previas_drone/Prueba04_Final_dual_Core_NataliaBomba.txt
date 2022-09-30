@@ -1,0 +1,300 @@
+Telemetry Viewer v0.7 Settings
+
+GUI Settings:
+
+	tile column count = 12
+	tile row count = 12
+	time format = Only Time
+	show 24-hour time = false
+	show plot tooltips = true
+	smooth scrolling = true
+	show fps and period = false
+	chart index for benchmarks = -1
+	antialiasing level = 16
+
+Communication Settings:
+
+	port = UART: COM4
+	uart baud rate = 115200
+	tcp/udp port number = 8080
+	packet type = CSV
+	sample rate = 10000
+
+16 Data Structure Locations:
+
+	location = 0
+	binary processor = null
+	name = Temperatura
+	color = 0xFF0000
+	unit = [°C]
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 1
+	binary processor = null
+	name = Presión
+	color = 0x006666
+	unit = [mBar]
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 2
+	binary processor = null
+	name = Altura
+	color = 0x666600
+	unit = [m]
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 3
+	binary processor = null
+	name = Altura_máxima
+	color = 0x990000
+	unit = [m]
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 4
+	binary processor = null
+	name = Apogeo
+	color = 0x0000CC
+	unit = On/Off
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 5
+	binary processor = null
+	name = Main_parachute
+	color = 0xFF00FF
+	unit = On/Off
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 6
+	binary processor = null
+	name = Acelerometro_X
+	color = 0x006600
+	unit = [m/s2]
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 7
+	binary processor = null
+	name = Acelerometro_Y
+	color = 0x000099
+	unit = [m/s2]
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 8
+	binary processor = null
+	name = Acelerometro_Z
+	color = 0x660000
+	unit = [m/s2]
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 9
+	binary processor = null
+	name = Media_cuadrática
+	color = 0x660066
+	unit = N/A
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 10
+	binary processor = null
+	name = Giroscopio_X
+	color = 0x006666
+	unit = [°/s]
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 11
+	binary processor = null
+	name = Giroscopio_Y
+	color = 0x660066
+	unit = [°/s]
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 12
+	binary processor = null
+	name = Giroscopio_Z
+	color = 0x666600
+	unit = [°/s]
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 13
+	binary processor = null
+	name = Magnetómetro_X
+	color = 0x009999
+	unit = [uT]
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 14
+	binary processor = null
+	name = Magnetómetro_Y
+	color = 0x660099
+	unit = [uT]
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+	location = 15
+	binary processor = null
+	name = Magnetómetro_Z
+	color = 0x999900
+	unit = [uT]
+	conversion factor a = 1.0
+	conversion factor b = 1.0
+
+Checksum:
+
+	location = -1
+	checksum processor = null
+
+7 Charts:
+
+	chart type = Dial
+	top left x = 0
+	top left y = 0
+	bottom right x = 3
+	bottom right y = 3
+	normal datasets = 0
+	bitfield edge states = 
+	bitfield level states = 
+	autoscale dial minimum = false
+	manual dial minimum = 0.0
+	autoscale dial maximum = false
+	manual dial maximum = 40.0
+	sample count = 1000
+	show dataset label = true
+	show reading label = true
+	show min/max labels = true
+	show statistics = true
+
+	chart type = Dial
+	top left x = 4
+	top left y = 0
+	bottom right x = 7
+	bottom right y = 3
+	normal datasets = 1
+	bitfield edge states = 
+	bitfield level states = 
+	autoscale dial minimum = false
+	manual dial minimum = 800.0
+	autoscale dial maximum = false
+	manual dial maximum = 1000.0
+	sample count = 1000
+	show dataset label = true
+	show reading label = true
+	show min/max labels = true
+	show statistics = true
+
+	chart type = Dial
+	top left x = 8
+	top left y = 0
+	bottom right x = 11
+	bottom right y = 3
+	normal datasets = 9
+	bitfield edge states = 
+	bitfield level states = 
+	autoscale dial minimum = false
+	manual dial minimum = -1.0
+	autoscale dial maximum = false
+	manual dial maximum = 100.0
+	sample count = 1000
+	show dataset label = true
+	show reading label = true
+	show min/max labels = true
+	show statistics = true
+
+	chart type = Time Domain
+	top left x = 0
+	top left y = 4
+	bottom right x = 5
+	bottom right y = 7
+	normal datasets = 6,7,8
+	bitfield edge states = 
+	bitfield level states = 
+	duration type = Samples
+	duration = 100
+	x-axis = Sample Count
+	autoscale y-axis minimum = false
+	manual y-axis minimum = -5.0
+	autoscale y-axis maximum = false
+	manual y-axis maximum = 15.0
+	show x-axis title = true
+	show x-axis scale = true
+	show y-axis title = true
+	show y-axis scale = true
+	show legend = true
+	cached mode = true
+
+	chart type = Time Domain
+	top left x = 6
+	top left y = 4
+	bottom right x = 11
+	bottom right y = 7
+	normal datasets = 2,3,4
+	bitfield edge states = 
+	bitfield level states = 
+	duration type = Samples
+	duration = 100
+	x-axis = Sample Count
+	autoscale y-axis minimum = true
+	manual y-axis minimum = -1.0
+	autoscale y-axis maximum = true
+	manual y-axis maximum = 1.0
+	show x-axis title = true
+	show x-axis scale = true
+	show y-axis title = true
+	show y-axis scale = true
+	show legend = true
+	cached mode = true
+
+	chart type = Time Domain
+	top left x = 0
+	top left y = 8
+	bottom right x = 5
+	bottom right y = 11
+	normal datasets = 13,14,15
+	bitfield edge states = 
+	bitfield level states = 
+	duration type = Samples
+	duration = 100
+	x-axis = Sample Count
+	autoscale y-axis minimum = true
+	manual y-axis minimum = -1.0
+	autoscale y-axis maximum = true
+	manual y-axis maximum = 1.0
+	show x-axis title = true
+	show x-axis scale = true
+	show y-axis title = true
+	show y-axis scale = true
+	show legend = true
+	cached mode = false
+
+	chart type = Time Domain
+	top left x = 6
+	top left y = 8
+	bottom right x = 11
+	bottom right y = 11
+	normal datasets = 10,11,12
+	bitfield edge states = 
+	bitfield level states = 
+	duration type = Samples
+	duration = 50
+	x-axis = Sample Count
+	autoscale y-axis minimum = true
+	manual y-axis minimum = -1.0
+	autoscale y-axis maximum = true
+	manual y-axis maximum = 1.0
+	show x-axis title = true
+	show x-axis scale = true
+	show y-axis title = true
+	show y-axis scale = true
+	show legend = true
+	cached mode = false
